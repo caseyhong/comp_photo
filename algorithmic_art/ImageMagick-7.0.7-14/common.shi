@@ -1,0 +1,22 @@
+# Test environment
+top_srcdir='/Users/caseyhong/Documents/f17/comp_photo/a10/asst/ImageMagick-7.0.7-14'
+top_builddir='/Users/caseyhong/Documents/f17/comp_photo/a10/asst/ImageMagick-7.0.7-14'
+
+set -a
+COMPARE="/Users/caseyhong/Documents/f17/comp_photo/a10/asst/ImageMagick-7.0.7-14/utilities/magick compare"
+COMPOSITE="/Users/caseyhong/Documents/f17/comp_photo/a10/asst/ImageMagick-7.0.7-14/utilities/magick composite"
+CONJURE="/Users/caseyhong/Documents/f17/comp_photo/a10/asst/ImageMagick-7.0.7-14/utilities/magick conjure"
+CONVERT="/Users/caseyhong/Documents/f17/comp_photo/a10/asst/ImageMagick-7.0.7-14/utilities/magick convert"
+DISPLAY="/Users/caseyhong/Documents/f17/comp_photo/a10/asst/ImageMagick-7.0.7-14/utilities/magick display"
+IDENTIFY="/Users/caseyhong/Documents/f17/comp_photo/a10/asst/ImageMagick-7.0.7-14/utilities/magick identify"
+MAGICK="/Users/caseyhong/Documents/f17/comp_photo/a10/asst/ImageMagick-7.0.7-14/utilities/magick"
+MONTAGE="/Users/caseyhong/Documents/f17/comp_photo/a10/asst/ImageMagick-7.0.7-14/utilities/magick montage"
+VALIDATE="/Users/caseyhong/Documents/f17/comp_photo/a10/asst/ImageMagick-7.0.7-14/tests/validate"
+DRAWTEST="/Users/caseyhong/Documents/f17/comp_photo/a10/asst/ImageMagick-7.0.7-14/tests/drawtest"
+WANDTEST="/Users/caseyhong/Documents/f17/comp_photo/a10/asst/ImageMagick-7.0.7-14/tests/wandtest"
+LD_LIBRARY_PATH="/Users/caseyhong/Documents/f17/comp_photo/a10/asst/ImageMagick-7.0.7-14/magick/.libs:${LD_LIBRARY_PATH}"
+MAGICK_CODER_MODULE_PATH="/Users/caseyhong/Documents/f17/comp_photo/a10/asst/ImageMagick-7.0.7-14/coders"
+MAGICK_CONFIGURE_PATH="/Users/caseyhong/Documents/f17/comp_photo/a10/asst/ImageMagick-7.0.7-14/config:/Users/caseyhong/Documents/f17/comp_photo/a10/asst/ImageMagick-7.0.7-14/config"
+MAGICK_FILTER_MODULE_PATH="/Users/caseyhong/Documents/f17/comp_photo/a10/asst/ImageMagick-7.0.7-14/filters"
+PATH="/Users/caseyhong/Documents/f17/comp_photo/a10/asst/ImageMagick-7.0.7-14/utilities:/Users/caseyhong/Documents/f17/comp_photo/a10/asst/ImageMagick-7.0.7-14/tests:${PATH}"
+set +a

@@ -1,0 +1,14 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include/ImageMagick-7
+includearchdir=/usr/local/include/ImageMagick-7
+libname=MagickCore-7.Q16HDRI
+ 
+Name: ImageMagick
+Description: ImageMagick - convert, edit, and compose images (ABI Q16HDRI)
+URL: https://www.imagemagick.org
+Version: 7.0.7
+Cflags:  -I${includearchdir} -I${includedir} -DMAGICKCORE_HDRI_ENABLE=1 -DMAGICKCORE_QUANTUM_DEPTH=16
+Libs: -L${libdir} -l${libname}
+Libs.private: -L${libdir} -l${libname}   -L/usr/local/Cellar/little-cms2/2.8_1/lib -llcms2 -ltiff -L/usr/local/opt/freetype/lib -lfreetype  -ljpeg   -L/usr/local/Cellar/libpng/1.6.34/lib -lpng16 -lz      -L/usr/local/Cellar/fontconfig/2.11.1_2/lib -L/usr/local/opt/freetype/lib -lfontconfig -lfreetype  -L/usr/local/Cellar/webp/0.6.0_2/lib -lwebpmux -lwebp -L/usr/local/Cellar/webp/0.6.0_2/lib -lwebp       -L/usr/local/Cellar/xz/5.2.3/lib -llzma -lbz2 -L/usr/local/Cellar/openexr/2.2.0/lib -L/usr/local/Cellar/ilmbase/2.2.0/lib -lIlmImf -lImath -lHalf -lIex -lIexMath -lIlmThread     -lxml2  -lz   -lm      -lm
